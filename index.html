@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- some codes are weird because at that time i was training in HTML & CSS, i didn't learn JavaScript yet  -->
+
+<head>
+    <meta charest="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kasper</title>
+    <!-- Favicon Page -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- main Template CSS File -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="CSS/media-queries.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="header nav">
+                <a href="index.html" aria-label="Logo icon"><img src="images/logo.png" alt="Logo" class="logo"></a>
+                <input type="checkbox" name="menu" id="menu" class="menu">
+                <label for="menu" aria-expanded="false" aria-label="click to open navigation links" role="button">
+                    <i class="fa-solid fa-bars toggle-menu"></i>
+                </label>
+                <ul>
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#pricing">PRICING</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <form class="search">
+                    <input type="checkbox" name="search-label" id="search-label">
+                    <input type="search" placeholder="Search" aria-placeholder="Click To Search">
+                    <label for="search-label" aria-expanded="false" aria-label="Click to open search bar">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </label>
+                </form>
+            </nav>
+        </div>
+        <section class="home" id="home">
+            <div class="overlay"></div>
+            <div class="text">
+                <div class="content">
+                    <h1 aria-label="HELLO WORLD! WE ARE KASPER, WE MAKE ART.">
+                        HELLO WORLD!<br>
+                        WE ARE KASPER, WE MAKE ART.
+                    </h1>
+                    <p>
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                        eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at
+                        sem. Mauris blandit aliquet elit, eget tincidunt.
+                    </p>
+                </div>
+            </div>
+            <i class="fa-solid fa-angle-left change-background back"></i>
+            <i class="fa-solid fa-angle-right change-background next"></i>
+            <ul class="bullets">
+                <li></li>
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="main-heading">
+                    <h2 class="title" aria-label="SERVICES">
+                        SERVICES
+                    </h2>
+                    <p class="desc">
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                        blandit aliquet elit, eget tincidunt.
+                    </p>
+                </div>
+                <div class="services-box">
+                    <div class="services-card">
+                        <i class="fa-solid fa-tv"></i>
+                        <div class="info">
+                            <h3 aria-label="Vorem amet intuitive">
+                                Vorem amet intuitive
+                            </h3>
+                            <p>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+                                a. Curabitur aliquet quam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services-card">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <div class="info">
+                            <h3 aria-label="Vorem amet intuitive">
+                                Vorem amet intuitive
+                            </h3>
+                            <p>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+                                a. Curabitur aliquet quam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services-card">
+                        <i class="fa-solid fa-gear"></i>
+                        <div class="info">
+                            <h3 aria-label="Vorem amet intuitive">
+                                Vorem amet intuitive
+                            </h3>
+                            <p>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+                                a. Curabitur aliquet quam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services-card">
+                        <i class="fa-solid fa-camera"></i>
+                        <div class="info">
+                            <h3 aria-label="service title">
+                                Vorem amet intuitive
+                            </h3>
+                            <p>
+                                Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                                sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+                                a. Curabitur aliquet quam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="design">
+            <div class="img">
+                <img src="images/Phones.png" alt="mobile photo">
+            </div>
+            <div class="text">
+                <h2>OUR DESIGNS COMES WITH...</h2>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Modern And Clean Design</li>
+                    <li>Clean Code</li>
+                    <li>Browser Friendly</li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="main-heading">
+                <h2 class="title" aria-label="PORTFOLIO">
+                    PORTFOLIO
+                </h2>
+                <p class="desc">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.
+                </p>
+                <div class="catagory">
+                    <input type="radio" name="catagory" id="all" checked>
+                    <label for="all">ALL</label>
+                    <input type="radio" name="catagory" id="app">
+                    <label for="app">APP</label>
+                    <input type="radio" name="catagory" id="photogrphy">
+                    <label for="photogrphy">PHOTOGRAPHY</label>
+                    <input type="radio" name="catagory" id="web">
+                    <label for="web">WEB</label>
+                    <input type="radio" name="catagory" id="print">
+                    <label for="print">PRINT</label>
+                    <div class="projects">
+                        <div class="project project-1 web">
+                            <img src="https://kinsta.com/wp-content/uploads/2020/02/web-design-best-practices.jpg">
+                            <div class="text">
+                                <i class="fa-solid fa-plus"></i>
+                                <h3>Awesome Image</h3>
+                                <p>Web Project</p>
+                            </div>
+                        </div>
+                        <div class="project project-2 photogrphy">
+                            <img
+                                src="https://blog.depositphotos.com/wp-content/uploads/2017/09/photography-ben-zank-feature-768x542.jpg.webp">
+                            <div class="text">
+                                <i class="fa-solid fa-plus"></i>
+                                <h3>Awesome Image</h3>
+                                <p>Photogrphy Project</p>
+                            </div>
+                        </div>
+                        <div class="project project-3 photogrphy">
+                            <img
+                                src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Photography_Ideas_01-landscape.jpg">
+                            <div class="text">
+                                <i class="fa-solid fa-plus"></i>
+                                <h3>Awesome Image</h3>
+                                <p>Photogrphy Project</p>
+                            </div>
+                        </div>
+                        <div class="project project-4 web">
+                            <img
+                                src="https://images.ctfassets.net/gg4ddi543f5b/3iqypVu3qR5tkEDaOrE2gV/cce7cc129f3f5b2ae25cccb86d3b4a36/web-development-template-boards_2x__2_.jpeg">
+                            <div class="text">
+                                <i class="fa-solid fa-plus"></i>
+                                <h3>Awesome Image</h3>
+                                <p>Web Project</p>
+                            </div>
+                        </div>
+                        <div class="project project-5 app">
+                            <img
+                                src="https://cdn.lifehack.org/wp-content/uploads/2015/03/Screenshot-2019-09-25-at-3.04.03-PM.png">
+                            <div class="text">
+                                <i class="fa-solid fa-plus"></i>
+                                <h3>Awesome Image</h3>
+                                <p>APP Project</p>
+                            </div>
+                        </div>
+                        <div class="project project-6 print">
+                            <img
+                                src="https://www.shawnmosch.com/wp-content/uploads/2021/07/PrintThenCutTroubleshooting.png">
+                            <div class="text">
+                                <i class="fa-solid fa-plus"></i>
+                                <h3>Awesome Image</h3>
+                                <p>Print Project</p>
+                            </div>
+                        </div>
+                        <div class="project project-7 app">
+                            <img
+                                src="https://cdn.lifehack.org/wp-content/uploads/2015/03/Screenshot-2019-09-25-at-2.57.31-PM.png">
+                            <div class="text">
+                                <i class="fa-solid fa-plus"></i>
+                                <h3>Awesome Image</h3>
+                                <p>APP Project</p>
+                            </div>
+                        </div>
+                        <div class="project project-8 print">
+                            <img
+                                src="https://static.wixstatic.com/media/7b135f_e4a1943ee1704327b4683da201c976de~mv2_d_7360_4912_s_4_2.jpg/v1/fill/w_640,h_724,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7b135f_e4a1943ee1704327b4683da201c976de~mv2_d_7360_4912_s_4_2.jpg">
+                            <div class="text">
+                                <i class="fa-solid fa-plus"></i>
+                                <h3>Awesome Image</h3>
+                                <p>Print Project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" role="button">More</a>
+            </div>
+        </section>
+        <section class="video">
+            <video autoplay muted loop>
+                <source src="images/videoplayback.mp4" type="video/mp4">
+                <source src="images/videoplayback.webm" type="video/webm">
+            </video>
+            <div class="text">
+                <h2>
+                    SUPER AWESOME VIDEO HERE
+                </h2>
+                <p>
+                    Its all you need
+                </p>
+                <a href="" role="button">SEE MORE</a>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="main-heading">
+                <h2 class="title" aria-label="SERVICES">
+                    ABOUT US
+                </h2>
+                <p class="desc">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.
+                </p>
+            </div>
+            <img src="images/Screens.png" alt="moniter pic">
+        </section>
+        <section class="statistic">
+            <div class="statistic-box">
+                <div class="statistic-card">
+                    <div class="frame">
+                        <img src="images/coffee.png" alt="Coffee picture">
+                    </div>
+                    <h2>1,263</h2>
+                    <p>Coffee Drinks</p>
+                </div>
+                <div class="statistic-card">
+                    <div class="frame">
+                        <img src="images/folder.png" alt="folder picture">
+                    </div>
+                    <h2>256</h2>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="statistic-card">
+                    <div class="frame">
+                        <img src="images/mail.png" alt="mail picture">
+                    </div>
+                    <h2>1,743</h2>
+                    <p>Mail Sent</p>
+                </div>
+                <div class="statistic-card">
+                    <div class="frame">
+                        <img src="images/medal.png" alt="medal picture">      
+                    </div>
+                    <h2>17</h2>
+                    <p>Awards Received</p>
+                </div>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <div class="testimonials card">
+                    <div class="main-heading">
+                        <h2 class="title" aria-label="TESTIMONIALS">TESTIMONIALS</h2>
+                        <p class="desc">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                    </div>
+                    <div class="testimonials-comments">
+                        <div class="testimonial-comment">
+                            <img src="https://wallpapers-clan.com/wp-content/uploads/2022/07/funny-cat-1.jpg" alt="user photo">
+                            <div class="text">
+                                <p class="comment">
+                                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+                                </p>
+                                <p class="user">
+                                    John Doe,CEO
+                                </p>
+                            </div>
+                        </div>
+                        <div class="testimonial-comment">
+                            <img src="https://i.etsystatic.com/5158340/r/il/cfae18/1038452569/il_1080xN.1038452569_la48.jpg" alt="">
+                            <div class="text">
+                                <p class="comment">
+                                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+                                </p>
+                                <p class="user">
+                                    John Doe,CEO
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="bullets">
+                            <li></li>
+                            <li class="active"></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-percentage card">
+                    <div class="main-heading">
+                        <h2 class="title" aria-label="OUR SKILLS">OUR SKILLS</h2> 
+                        <p class="desc">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                    </div>
+                    <div>
+                        <label class="adobe">ADOBE <progress value="95" max="100">95%</progress></label>
+                        <label class="html-css">HTML & CSS <progress value="93" max="100">93%</progress></label>
+                        <label class="javascript">JAVASCRIPT <progress value="85" max="100">85%</progress></label>
+                        <label class="php">PHP <progress value="87" max="100">87%</progress></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quote">
+            <h2>
+                “ACCUMSAN ID CURABITUR ET PORTITOR MAURIS BLANDIT DOLOR LOREM SOME
+                EST OUR DONEC STIN LORTIOS”
+            </h2>
+            <p>
+                John Doe
+            </p>
+        </section>
+        <section class="pricing">
+            <div class="main-heading">
+                <h2 class="title" aria-label="PRICING">PRICING</h2>
+                <p class="desc">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="pricing-box">
+                <div class="pricing-card">
+                    <div class="border">
+                        <h3>BASIC</h3>
+                        <div class="plan">
+                            <p>$</p>
+                            <p>19</p>
+                            <p>/MO</p>
+                        </div>
+                        <div class="feature">
+                            <p>Feature N0 1</p>
+                            <p>Extra Feature </p>
+                            <p>Feature N0 2</p>
+                            <p>Feature</p>
+                        </div>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="border">
+                        <h3>PREMIUM</h3>
+                        <div class="plan">
+                            <p>$</p>
+                            <p>29</p>
+                            <p>/MO</p>
+                        </div>
+                        <div class="feature">
+                            <p>Feature N0 1</p>
+                            <p>Extra Feature </p>
+                            <p>Feature N0 2</p>
+                            <p>Feature</p>
+                        </div>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="border">
+                        <h3>PRO</h3>
+                        <div class="plan">
+                            <p>$</p>
+                            <p>39</p>
+                            <p>/MO</p>
+                        </div>
+                        <div class="feature">
+                            <p>Feature N0 1</p>
+                            <p>Extra Feature </p>
+                            <p>Feature N0 2</p>
+                            <p>Feature</p>
+                        </div>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="border">
+                        <h3>PLATINUM</h3>
+                        <div class="plan">
+                            <p>$</p>
+                            <p>49</p>
+                            <p>/MO</p>
+                        </div>
+                        <div class="feature">
+                            <p>Feature N0 1</p>
+                            <p>Extra Feature </p>
+                            <p>Feature N0 2</p>
+                            <p>Feature</p>
+                        </div>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="special-request">
+                <p>
+                    Contact us if you have special request
+                </p>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </section>
+        <section class="email">
+            <div class="container">
+                <form>
+                    <input type="email" placeholder="YOUR MAIL">
+                    <input type="submit" value="SUBSCRIBE">
+                </form>
+                <p>
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan
+                    dit aliquet elit, eget tincidunt.
+                </p>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="main-heading">
+                <h2 class="title" aria-label="CONTACT US">CONTACT US</h2>
+                <p class="desc">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+            </div>
+            <div class="container">
+                <form action="get">
+                    <div class="group">
+                        <div class="input-section">
+                            <input type="text" placeholder="YOUR NAME" required>
+                            <input type="email" placeholder="YOUR MAIL" required>
+                        </div>
+                        <div class="touch info">
+                            <h3>
+                                GET IN TOUCH:
+                            </h3>
+                            <p>+00 123.456.789</p>
+                            <p>+00 123.456.789</p>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <textarea placeholder="YOUR MESSAGE" required></textarea>
+                        <div class="place info">
+                            <h3>
+                                WHERE WE ARE:
+                            </h3>
+                            <p>Awesome Address 17</p>
+                            <p>New York,NYC</p>
+                            <p>123-4567-890</p>
+                            <p>USA</p>
+                        </div>
+                    </div>
+                    <input type="submit" value="SEND MESSAGE">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="index.html">
+            <img src="images/logo.png" class="logo" alt="logo">
+        </a>
+        <p>WE ARE SOCIAL</p>
+        <div class="icons">
+            <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-basketball"></i>
+            </a>
+        </div>
+        <p>&copy; 2014 - <span>Kasper</span> All Right Reserved</p> 
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b7dea25cd1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

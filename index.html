@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <!-- main Template CSS File -->
     <link rel="stylesheet" href="CSS/main.css">
-    <!-- Media Queries -->
-    <link rel="stylesheet" href="CSS/media-queries.css">
 </head>
 
 <body>
@@ -22,41 +20,47 @@
         <div class="container">
             <nav aria-label="header nav">
                 <a href="index.html" aria-label="Logo icon"><img src="images/logo.png" alt="Logo" class="logo"></a>
-                <input type="checkbox" name="menu" id="menu" class="menu">
-                <label for="menu" aria-expanded="false" aria-label="click to open navigation links" role="button">
-                    <i class="fa-solid fa-bars toggle-menu"></i>
-                </label>
-                <ul>
-                    <li><a href="#home" class="active">HOME</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#pricing">PRICING</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-                <form class="search">
-                    <input type="checkbox" name="search-label" id="search-label">
-                    <input type="search" placeholder="Search" aria-placeholder="Click To Search">
-                    <label for="search-label" aria-expanded="false" aria-label="Click to open search bar">
-                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    </label>
-                </form>
+                <div class="nav-group">
+                    <div class="nav-links">
+                        <input type="checkbox" name="menu" id="menu" class="menu">
+                        <label for="menu" aria-expanded="false" aria-label="click to open navigation links" role="button">
+                            <i class="fa-solid fa-bars toggle-menu"></i>
+                        </label>
+                        <ul>
+                            <li><a href="#home" class="active">HOME</a></li>
+                            <li><a href="#services">SERVICES</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#pricing">PRICING</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                            <li class="theme">
+                                <input type="checkbox" name="toggle-mode" id="toggle-mode">
+                                <label for="toggle-mode"></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="search">
+                        <input type="checkbox" name="search-label" id="search-label">
+                        <input type="search" placeholder="Search" aria-placeholder="Click To Search">
+                        <label for="search-label" aria-expanded="false" aria-label="Click to open search bar">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        </label>
+                    </form>
+                </div>
             </nav>
         </div>
         <section class="home" id="home">
             <div class="overlay"></div>
             <div class="text">
-                <div class="content">
-                    <h1 aria-label="HELLO WORLD! WE ARE KASPER, WE MAKE ART.">
-                        HELLO WORLD!<br>
-                        WE ARE KASPER, WE MAKE ART.
-                    </h1>
-                    <p>
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
-                        eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at
-                        sem. Mauris blandit aliquet elit, eget tincidunt.
-                    </p>
-                </div>
+                <h1 aria-label="HELLO WORLD! WE ARE KASPER, WE MAKE ART.">
+                    HELLO WORLD!<br>
+                    WE ARE KASPER, WE MAKE ART.
+                </h1>
+                <p>
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                    eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at
+                    sem. Mauris blandit aliquet elit, eget tincidunt.
+                </p>
             </div>
             <i class="fa-solid fa-angle-left change-background back"></i>
             <i class="fa-solid fa-angle-right change-background next"></i>
@@ -69,19 +73,19 @@
     </header>
     <main>
         <section class="services" id="services">
+            <div class="main-heading">
+                <h2 class="title" aria-label="SERVICES">
+                    SERVICES
+                </h2>
+                <p class="desc">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
+                    blandit aliquet elit, eget tincidunt.
+                </p>
+            </div>
             <div class="container">
-                <div class="main-heading">
-                    <h2 class="title" aria-label="SERVICES">
-                        SERVICES
-                    </h2>
-                    <p class="desc">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris
-                        blandit aliquet elit, eget tincidunt.
-                    </p>
-                </div>
                 <div class="services-box">
                     <div class="services-card">
-                        <i class="fa-solid fa-tv"></i>
+                            <div class="img"></div>
                         <div class="info">
                             <h3 aria-label="Vorem amet intuitive">
                                 Vorem amet intuitive
@@ -94,7 +98,7 @@
                         </div>
                     </div>
                     <div class="services-card">
-                        <i class="fa-solid fa-pen-ruler"></i>
+                        <div class="img"></div>
                         <div class="info">
                             <h3 aria-label="Vorem amet intuitive">
                                 Vorem amet intuitive
@@ -107,7 +111,7 @@
                         </div>
                     </div>
                     <div class="services-card">
-                        <i class="fa-solid fa-gear"></i>
+                        <div class="img"></div>
                         <div class="info">
                             <h3 aria-label="Vorem amet intuitive">
                                 Vorem amet intuitive
@@ -120,7 +124,7 @@
                         </div>
                     </div>
                     <div class="services-card">
-                        <i class="fa-solid fa-camera"></i>
+                        <div class="img"></div>
                         <div class="info">
                             <h3 aria-label="service title">
                                 Vorem amet intuitive
@@ -170,7 +174,7 @@
                     <input type="radio" name="catagory" id="print">
                     <label for="print">PRINT</label>
                     <div class="projects">
-                        <div class="project project-1 web">
+                        <div class="project web">
                             <img src="https://kinsta.com/wp-content/uploads/2020/02/web-design-best-practices.jpg">
                             <div class="text">
                                 <i class="fa-solid fa-plus"></i>
@@ -178,7 +182,7 @@
                                 <p>Web Project</p>
                             </div>
                         </div>
-                        <div class="project project-2 photogrphy">
+                        <div class="project photogrphy">
                             <img
                                 src="https://blog.depositphotos.com/wp-content/uploads/2017/09/photography-ben-zank-feature-768x542.jpg.webp">
                             <div class="text">
@@ -187,7 +191,7 @@
                                 <p>Photogrphy Project</p>
                             </div>
                         </div>
-                        <div class="project project-3 photogrphy">
+                        <div class="project photogrphy">
                             <img
                                 src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/Photography_Ideas_01-landscape.jpg">
                             <div class="text">
@@ -196,7 +200,7 @@
                                 <p>Photogrphy Project</p>
                             </div>
                         </div>
-                        <div class="project project-4 web">
+                        <div class="project web">
                             <img
                                 src="https://images.ctfassets.net/gg4ddi543f5b/3iqypVu3qR5tkEDaOrE2gV/cce7cc129f3f5b2ae25cccb86d3b4a36/web-development-template-boards_2x__2_.jpeg">
                             <div class="text">
@@ -205,7 +209,7 @@
                                 <p>Web Project</p>
                             </div>
                         </div>
-                        <div class="project project-5 app">
+                        <div class="project app">
                             <img
                                 src="https://cdn.lifehack.org/wp-content/uploads/2015/03/Screenshot-2019-09-25-at-3.04.03-PM.png">
                             <div class="text">
@@ -214,7 +218,7 @@
                                 <p>APP Project</p>
                             </div>
                         </div>
-                        <div class="project project-6 print">
+                        <div class="project -6 print">
                             <img
                                 src="https://www.shawnmosch.com/wp-content/uploads/2021/07/PrintThenCutTroubleshooting.png">
                             <div class="text">
@@ -223,7 +227,7 @@
                                 <p>Print Project</p>
                             </div>
                         </div>
-                        <div class="project project-7 app">
+                        <div class="project app">
                             <img
                                 src="https://cdn.lifehack.org/wp-content/uploads/2015/03/Screenshot-2019-09-25-at-2.57.31-PM.png">
                             <div class="text">
@@ -232,7 +236,7 @@
                                 <p>APP Project</p>
                             </div>
                         </div>
-                        <div class="project project-8 print">
+                        <div class="project print">
                             <img
                                 src="https://static.wixstatic.com/media/7b135f_e4a1943ee1704327b4683da201c976de~mv2_d_7360_4912_s_4_2.jpg/v1/fill/w_640,h_724,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7b135f_e4a1943ee1704327b4683da201c976de~mv2_d_7360_4912_s_4_2.jpg">
                             <div class="text">
@@ -276,30 +280,22 @@
         <section class="statistic">
             <div class="statistic-box">
                 <div class="statistic-card">
-                    <div class="frame">
-                        <img src="images/coffee.png" alt="Coffee picture">
-                    </div>
+                    <div class="frame img"></div>
                     <h2>1,263</h2>
                     <p>Coffee Drinks</p>
                 </div>
                 <div class="statistic-card">
-                    <div class="frame">
-                        <img src="images/folder.png" alt="folder picture">
-                    </div>
+                    <div class="frame img"></div>
                     <h2>256</h2>
                     <p>Completed Projects</p>
                 </div>
                 <div class="statistic-card">
-                    <div class="frame">
-                        <img src="images/mail.png" alt="mail picture">
-                    </div>
+                    <div class="frame img"></div>
                     <h2>1,743</h2>
                     <p>Mail Sent</p>
                 </div>
                 <div class="statistic-card">
-                    <div class="frame">
-                        <img src="images/medal.png" alt="medal picture">      
-                    </div>
+                    <div class="frame img"></div>
                     <h2>17</h2>
                     <p>Awards Received</p>
                 </div>
@@ -364,7 +360,7 @@
                 John Doe
             </p>
         </section>
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="main-heading">
                 <h2 class="title" aria-label="PRICING">PRICING</h2>
                 <p class="desc">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
@@ -458,7 +454,7 @@
                 </p>
             </div>
         </section>
-        <section class="contact-us">
+        <section class="contact-us" id="contact">
             <div class="main-heading">
                 <h2 class="title" aria-label="CONTACT US">CONTACT US</h2>
                 <p class="desc">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
@@ -470,17 +466,17 @@
                             <input type="text" placeholder="YOUR NAME" required>
                             <input type="email" placeholder="YOUR MAIL" required>
                         </div>
-                        <div class="touch info">
+                        <article class="touch info">
                             <h3>
                                 GET IN TOUCH:
                             </h3>
                             <p>+00 123.456.789</p>
                             <p>+00 123.456.789</p>
-                        </div>
+                        </article>
                     </div>
                     <div class="group">
                         <textarea placeholder="YOUR MESSAGE" required></textarea>
-                        <div class="place info">
+                        <article class="place info">
                             <h3>
                                 WHERE WE ARE:
                             </h3>
@@ -488,7 +484,7 @@
                             <p>New York,NYC</p>
                             <p>123-4567-890</p>
                             <p>USA</p>
-                        </div>
+                        </article>
                     </div>
                     <input type="submit" value="SEND MESSAGE">
                 </form>

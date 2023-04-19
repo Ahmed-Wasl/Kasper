@@ -5,8 +5,8 @@ In this project, I trained on the basics of Front-end, and I will try to develop
 <br />
 ## **steps:** <br />
 1- get better code (html & css). ✔ <br /> 
-2- learn Framework for CSS {Bootstrap}. <br />
-3- learn JavaScript and add it to the project. <br />
-4- get better code for JavaScript. <br />
+2- learn JavaScript and add it to the project. <br />
+3- get better code for JavaScript. <br />
+4- learn Framework for CSS {Bootstrap}. <br />
 5- learn Framework for JavaScript {React}<br />
 6- get better code for React.js <br />
